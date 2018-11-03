@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-videojs": [
+        "dist/ngx-videojs"
+      ],
+      "ngx-videojs/*": [
+        "dist/ngx-videojs/*"
+      ]
+    }
   }
 }
