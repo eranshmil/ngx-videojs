@@ -24,6 +24,10 @@ import { EventType } from '../../models/event-type';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class VjsVideoComponent implements AfterViewInit, OnDestroy {
+  readonly defaultOptions: videojs.PlayerOptions = {
+    controls: true
+  };
+
   @Input() options: videojs.PlayerOptions;
   @Input() sources: string[];
 
@@ -63,7 +67,10 @@ export class VjsVideoComponent implements AfterViewInit, OnDestroy {
   }
 
   private _init() {
-    this._videoInstance = videojs(this._playerElement.nativeElement, this.options || {});
+    this._videoInstance = videojs(
+      this._playerElement.nativeElement,
+      videojs.mergeOptions(this.defaultOptions, this.options)
+    );
 
     this._registerEvents();
   }
