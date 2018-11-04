@@ -2,6 +2,6 @@
  * Public API Surface of ngx-videojs
  */
 
-export * from './lib/ngx-videojs.service';
-export * from './lib/ngx-videojs.component';
-export * from './lib/ngx-videojs.module';
+export * from './lib/components';
+
+export * from './lib/vjs.module';
