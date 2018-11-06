@@ -1,5 +1,3 @@
-import { Output } from '@angular/core';
-
 export enum EventType {
   canPlay,
   canPlayThrough,

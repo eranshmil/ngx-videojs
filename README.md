@@ -6,4 +6,9 @@
 - Support responsive mode.
 - Wrap more features.
 - Add more examples.
-- Support multiple source files.
+- Write unit tests.
+- Plugins support.
+- Languages support.
+- Playlist support.
+- Check bundle size.
+- Add commit lint and precommit prettier.
